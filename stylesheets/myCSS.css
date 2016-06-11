@@ -17,7 +17,7 @@ display:inline;
 vertical-align:middle;
 }
 
-.musicControl{
+#musicControl{
 float:right;
 }
 
@@ -35,4 +35,20 @@ height:12em;
 
 audio{
 display:none;
+}
+
+footer {
+text-align;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #aaa;
+  background: transparent url('../images/hr.png') 0 0 no-repeat;
+}
+footer a {
+  color: #666;
+}
+footer a:hover {
+  color: #444;
 }
