@@ -26,3 +26,9 @@ position:fixed;
 top:1em;
 right:1em;
 }
+
+#noter textarea{
+font-size:0.5em;
+width:8em;
+height:12em;
+}
