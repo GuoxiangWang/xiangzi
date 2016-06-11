@@ -1,5 +1,28 @@
 body{
-margin-top:4em;
+margin:4em 8em 0 8em;
 background-image:url(../images/spring.jpg);
 }
 
+#container{
+background-image:url(../images/body-bg.png);
+background-repeat:repeat;
+padding:4em;
+}
+
+#downloads li{
+display:inline;
+}
+
+#downloads img{
+vertical-align:middle;
+}
+
+.musicControl{
+float:right;
+}
+
+#noter{
+position:fixed;
+top:1em;
+right:1em;
+}
