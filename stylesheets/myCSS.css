@@ -62,7 +62,21 @@ float:right;
 .thumbnails img{
 height:10em;
 }
-#sidebar img{
-width:7em;
 
+
+#sidebar img{
+width:62%;
+margin:19%;
+border:silver dashed 0.1em;
+}
+
+#sidebar ul{
+list-style-type:none;
+}
+
+
+#sidebar pre{
+margin-top:-19%;
+background:none transparent;
+border:none;
 }
