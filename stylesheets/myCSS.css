@@ -1,6 +1,6 @@
 body{
 margin:4em 8em 0 8em;
-background-image:url(../images/spring.jpg);
+background-image:url(https://raw.githubusercontent.com/GuoxiangWang/xiangzi/gh-pages/images/spring.JPG);
 }
 
 #container{
@@ -31,7 +31,7 @@ right:1em;
 font-size:0.5em;
 width:8em;
 height:12em;
-background-image:url(../images/note-bg.png);
+background-image:url(https://raw.githubusercontent.com/GuoxiangWang/xiangzi/gh-pages/images/note-bg.PNG);
 background-repeat:repeat;
 }
 
