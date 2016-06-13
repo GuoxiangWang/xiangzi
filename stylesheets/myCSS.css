@@ -1,9 +1,14 @@
 body{
 margin:4em 8em 0 8em;
-background-image:url(https://raw.githubusercontent.com/GuoxiangWang/xiangzi/gh-pages/images/spring.JPG);
+background-image:url(../images/spring.JPG);
+background-attachment:fixed;
 }
 
-#container{
+header{
+  color:white;
+}
+
+#main_content{
 background-image:url(../images/body-bg.png);
 background-repeat:repeat;
 padding:4em;
@@ -97,3 +102,6 @@ background-color:white;
 height:5em;
 }
 
+.blogList li{
+	list-style-type:square;
+}
