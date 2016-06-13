@@ -11,11 +11,9 @@ else{$(this).after("<audio src='https://raw.githubusercontent.com/GuoxiangWang/x
 })
 
 
-$("#learning img").mouseover(function(){
-console.log("It worked");
-$(this).css({"height":"10em"});
+$("#learning .thumbnail").mouseover(function(){
+$(this).children("img").css({"height":"10em"});
 }).mouseout(function(){
-console.log("It left");
 $(this).css({"height":"5em"});
 })
 
