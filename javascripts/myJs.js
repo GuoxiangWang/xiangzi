@@ -17,8 +17,5 @@ $(this).find("img").css({"height":"10em"});
 $(this).find("img").css({"height":"5em"});
 })
 
-
-
-
 }
 )
