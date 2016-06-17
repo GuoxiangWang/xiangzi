@@ -106,3 +106,7 @@ height:5em;
 .blogList li{
 	list-style-type:square;
 }
+
+#centerSide h3{
+	border-bottom:white dashed thin;
+}
