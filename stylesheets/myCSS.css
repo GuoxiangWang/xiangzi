@@ -39,6 +39,7 @@ width:6em;
 height:8em;
 background-image:url(https://raw.githubusercontent.com/GuoxiangWang/xiangzi/gh-pages/images/note-bg.PNG);
 background-repeat:repeat;
+display:none;
 }
 
 audio{
