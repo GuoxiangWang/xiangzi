@@ -87,6 +87,11 @@ width:90%;
 list-style-type:none;
 }
 
+#sidebar li{
+margin-top:-2em;
+padding:0.5em;
+}
+
 
 #sidebar pre{
 text-indent:5%;
