@@ -121,3 +121,7 @@ height:5em;
 pre.code textarea{
 	width:98%;
 }
+.blogList a{
+	color:black;
+	font-weight:bold;
+}
