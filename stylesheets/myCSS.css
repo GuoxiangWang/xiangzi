@@ -117,3 +117,7 @@ height:5em;
 #centerSide h3{
 	border-bottom:white dashed thin;
 }
+
+pre.code textarea{
+	width:98%;
+}

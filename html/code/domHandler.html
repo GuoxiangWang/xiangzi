@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+
+
+    <link type="text/css" rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/myCSS.css">
+    <script src="../../javascripts/jQuery.js" type="text/javascript" ></script>
+    <script type="text/javascript" src="../../bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../../javascripts/myJs.js"></script>
+
+    <title>王国祥的博客</title>
+  </head>
+
+  <body>
+
+
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>心有猛虎，细嗅蔷薇</h1>
+          <h2><small>有人的地方就有人际交往，其实我早就发现了自己人际交往能力很弱，但是每次都用我们都不擅长人际交往这个借口来搪塞自己。想要在有人的地方避开人际交往，这就是我失败的原因。—to myself</small></h2>
+
+<div id="musicControl">          
+<i class="icon-music"></i>
+</div>
+
+</header>
+
+        <section id="downloads" class="clearfix">
+            <button class="btn btn-large" type="button"><img src="../../images/zip-icon.png")><a href="https://github.com/GuoxiangWang/xiangzi/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a></button>
+            <button type="button" class="btn btn-large"><img src="../../images/tar-gz-icon.png")><a href="https://github.com/GuoxiangWang/xiangzi/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a></button>
+            <button class="btn btn-large" type="button"><img src="../../images/octocat-icon.png")><a href="https://github.com/GuoxiangWang/xiangzi" id="view-on-github" class="button"><span>View on GitHub</span></a></button>
+        </section>
+
+
+<section id="toolbar">
+
+<div class="dropdown">
+<!--下拉列表-->
+<div class="btn-group">
+<button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+    发博文<span class="caret"></span>
+   </button>
+<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+<li><a tabindex="-1" href="#">长微博</a></li>
+<li><a tabindex="-1" href="#">发图片</a></li>
+<li><a tabindex="-1" href="#">发游记</a></li>
+<li class="divider"></li>
+<li> <a tabindex="-1" href="#">More</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="navigator">
+<ul class="nav nav-tabs">
+<li><a href="../../index.html">首页</a></li>
+<li><a href="#">博文列表</a></li>
+<li><a href="#">图片</a></li>
+<li><a href="aboutME.html">关于我</a></li>
+</section>
+
+
+<hr>
+
+<section id="noter">
+<textarea>待办事项：
+初步设想是该文本域失去焦点以后，如果内容有所修改即上传至服务器
+</textarea>
+</section>
+
+<section id="main_content">
+<div class="row-fluid">
+
+<div class="span3"id="sidebar">
+<p>个人资料</p>
+<p><img id="sidebarImg1" src="../../images/sculpture.png" /></p>
+<pre>
+<ul>
+<li>迷途的板蓝根</li>
+<li>山东省 济南市</li>
+<li>1988年 天蝎座</li>
+<li>爱好：乱七八糟</li>
+<li>生活：一塌糊涂</li>
+<li>未来：杳无音信</li>
+</ul>
+</pre>
+</div>
+
+
+<div class="span9">
+<p class="lead">创建对象</p>
+<pre class="code">
+<textarea rows=25>
+1. 
+1.1
+<html>
+<head>
+<script type="text/javascript" src="../../jQuery.js"></script>
+<script type="text/javascript" src="../scripts/exa.js"></script>
+<style type="text/css" rel="stylesheet">
+body{background-color:silver;} 
+</style>
+</head>
+<body>
+<p>Here is an exhibition, it shows how to deal with the DOM in html.</p>
+<div id="DOM">
+<p style="display:block">这个例子演示了如何对DOM元素进行操作，包括追加、插入、删除以及替换。</p>
+<input type="button" id="add"  value="APPEND"/>
+<input type="button" id="delete"  value="DELETE"/>
+<input type="button" id="insert"  value="INSERT"/>
+<input type="button" id="replace"  value="REPLACE"/>
+<p>此处是#DOM的倒数第二个子元素，其后还有一个空元素。</p>
+</div>
+<div id="text">
+</div>
+</body>
+</html>
+</textarea>
+1.2
+$(function(){
+ 
+ var childLength=document.getElementById("DOM").childNodes.length;
+
+ $("#add").click(function(event){
+ var $node1=document.createElement("p");            //此处每次click事件发生之后都需要重新定义需要插入的节点，否则再执行插入相同的节点相当于一个移动操作
+ var $text1=document.createTextNode("I'm Here!");
+ $node1.appendChild($text1);
+  document.getElementById("DOM").appendChild($node1);
+  });
+ 
+ $("#delete").click(function(){
+  if (document.getElementById("DOM").childNodes.length>childLength)
+ {
+  document.getElementById("DOM").removeChild(document.getElementById("DOM").lastChild)};
+});
+ 
+ $("#insert").click(function(){
+  var $node2=document.createElement("p");
+ var $text2=document.createTextNode("I'm Here Again!");
+ $node2.appendChild($text2);
+ document.getElementById("DOM").insertBefore($node2,null);
+ });
+ 
+ $("#replace").click(function(){
+  if (document.getElementById("DOM").childNodes.length>childLength){
+  var $node3=document.createElement("p");
+  var $text3=document.createTextNode("I'm Here Again And Again");
+  $node3.appendChild($text3);
+  document.getElementById("DOM").replaceChild($node3,document.getElementById("DOM").lastChild);
+  }
+ 
+  });
+
+}
+)
+
+
+
+</pre>
+</div>
+
+
+
+
+
+</div>
+</div>
+        </section>
+
+        <footer>
+          This blog is maintained by <a href="https://github.com/GuoxiangWang">GuoxiangWang</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+      </div>  
+      
+    </div>
+  </body>
+</html>
