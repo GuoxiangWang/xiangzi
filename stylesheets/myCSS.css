@@ -127,11 +127,12 @@ pre.code textarea{
 }
 
 #mainContent{
-	min-height:8em;
+	min-height:12em;
 	font-size:3em;
 }
 #mainContent button{
 	display:block;
 	height:5em;
 	margin-bottom:2em;
+        font-size:2em;
 }
