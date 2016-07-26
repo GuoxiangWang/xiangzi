@@ -132,7 +132,6 @@ pre.code textarea{
 }
 #mainContent button{
 	display:block;
-	height:5em;
-	margin-bottom:2em;
+	height:1.5em;
         font-size:2em;
 }
