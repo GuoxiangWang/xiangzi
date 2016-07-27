@@ -5,6 +5,8 @@ $(function(){
 	var itemArr=item.split("***");
 	var exampleArr=example.split("***");
 	var meanArr=mean.split("***");
+	var newArr=['$(selector). load(url selector[,data][,callback])', '$.get(url[,data][,callback][,type])', '$.post(url[,data][,callback][,type]) ', '$.getScript(url[,callback])', '$.getJSON(url[,data][,callback])', '$.each(parcallback) ', '$.ajax(par) ','$(selector).serialize( ) ', 'encodeURIComponent(string)','$(selector).serializeArray( ) ','$(selector).param( ) ','$(selector).ajaxStart(func)','$(selector).ajaxStop(func)'];
+	itemArr=itemArr.concat(newArr);
 	
 	$("#mainContent button:eq(0)").click(function(){
 		var randomNum=Math.floor(Math.random()*itemArr.length);
