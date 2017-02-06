@@ -11,7 +11,7 @@ header{
 #main_content{
 background-image:url(../images/body-bg.png);
 background-repeat:repeat;
-padding:4em;
+padding:1em;
 }
 
 #downloads li{
@@ -27,27 +27,12 @@ float:right;
 background-color:white;
 }
 
-#noter{
-position:fixed;
-top:1em;
-right:1em;
-}
-
-#noter textarea{
-font-size:0.5em;
-width:6em;
-height:8em;
-background-image:url('../images/note-bg.PNG');
-background-repeat:repeat;
-display:none;
-}
-
 audio{
 display:none;
 }
 
 footer {
-text-align:center;
+  text-align:center;
   padding-top: 20px;
   padding-bottom: 30px;
   margin-top: 40px;
@@ -72,14 +57,13 @@ height:10em;
 
 
 #sidebarImg1{
-width:62%;
+width:49%;
 margin:19%;
-border:silver dashed 0.1em;
+border-radius:50%;
 }
 
-#sidebarImg2{
-margin-top:-20%;
-width:90%;
+#sidebar{
+padding-left:4%;
 }
 
 
@@ -96,34 +80,9 @@ padding:0.5em;
 #sidebar pre{
 font-size:90%;
 text-indent:5%;
-color:purple;
 margin-top:-19%;
 background:none transparent;
 border:none;
-}
-
-#learning .thumbnail{
-background-color:white;
-}
-
-#learning .thumbnail img{
-height:5em;
-}
-
-.blogList li{
-	list-style-type:square;
-}
-
-#centerSide h3{
-	border-bottom:white dashed thin;
-}
-
-pre.code textarea{
-	width:98%;
-}
-.blogList a{
-	color:black;
-	font-weight:bold;
 }
 
 #mainContent{
@@ -133,12 +92,26 @@ pre.code textarea{
 #mainContent button{
 	display:block;
 	height:1.5em;
-margin_bottom:1em;
-        font-size:2em;
+	margin-bottom:1em;
+    font-size:2em;
 }
 #mainContent p{
 line-height:2em;
 font-size:1.8em;
 margin-bottom;1em;
 
+}
+table{
+	text-align:center;
+	margin:1em 0;
+}
+.even{
+	height:4em;
+	vertical-align:0.1em;
+}
+table img{
+	width:60%;
+}
+h3{
+	border-bottom:dotted thin white;
 }

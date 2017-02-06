@@ -25,15 +25,14 @@ else{
 
 
 <!--Èý½£¿ÍÍ¼ÏñÊó±êÐü¸¡¶¯»­-->
-$("#learning .thumbnail").mouseover(function(){
-$(this).find("img").css({"height":"10em"});
+$("table img").mouseover(function(){
+$(this).css({"width":"100%"});
 }).mouseout(function(){
-$(this).find("img").css({"height":"5em"});
+$(this).css({"width":"60%"});
 })
 
 }
 )
-
 
 function twinkle(){
 	if($("#musicControl").css("visibility")=="visible")
